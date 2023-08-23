@@ -1,0 +1,8 @@
+Hello world
+line 1
+xyz
+abcdef
+12345
+test sampled
+     spaces     read    test   eol
+end

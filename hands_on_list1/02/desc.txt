@@ -1,0 +1,7 @@
+To find details in proc: 
+We use lsof -p procId
+
+To bring process in foreground:
+We use fg
+or we can directly kill the process using:
+kill procId
