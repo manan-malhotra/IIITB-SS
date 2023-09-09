@@ -1,0 +1,44 @@
+/*
+============================================================================
+Name : 14.c
+Author : Manan Malhotra
+Description : Write a program to find the type of a file.
+a. Input should be taken from command line.
+b. program should be able to identify any type of a file.
+Date: 25th August, 2023
+============================================================================
+*/
+#include<stdio.h>
+#include<unistd.h>
+#include<sys/types.h>
+#include<sys/stat.h>
+int main(){
+struct stat stats;
+  char input[100];
+  scanf("%[^\n]", &input);
+  lstat(input, &stats);
+  printf("file type = ");
+  switch(stats.st_mode & S_IFMT) {
+    case S_IFBLK:
+      printf("block special\n");
+      break;
+    case S_IFCHR:
+      printf("character special\n");
+      break;
+    case S_IFIFO:
+      printf("FIFO special\n");
+      break;
+    case S_IFDIR:
+      printf("directory\n");
+      break;
+    case S_IFREG:
+      printf("regular\n");
+      break;
+    case S_IFLNK:
+      printf("symbolic link\n");
+      break;
+    default:
+      printf("not known!\n");
+  }
+return 0;
+}
