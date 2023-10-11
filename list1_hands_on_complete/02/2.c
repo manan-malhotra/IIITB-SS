@@ -7,7 +7,7 @@ Date: 23rd Aug, 2023.
 ============================================================================
 */
 #include<stdio.h>
-
+ #include <unistd.h>
 int main(){
 while(1);
 return 0;
