@@ -22,7 +22,7 @@ typedef struct Course {
 typedef struct Admin {
     // Add course details (e.g., ID, name, seats)
     char name[100];
-	char emailId[100];
+	char userName[100];
 	char password[100];
 } Admin;
 

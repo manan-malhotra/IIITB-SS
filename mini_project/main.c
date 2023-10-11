@@ -8,7 +8,7 @@ void adminMenu() {
     //scanf("%d",choice);
 
     do {
-        printf("\nAdmin Menu\n");
+        printf("\nAdmin Menu\n\n");
         printf("1. Add Student\n");
         printf("2. Add Faculty\n");
         printf("3. Activate/Deactivate Student\n");
