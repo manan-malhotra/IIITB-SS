@@ -25,7 +25,7 @@ int main() {
         perror("Fork");
         exit(EXIT_FAILURE);
     }
-    if(!pid) {
+    if(pid==0) { // child
         char buf[100];
         close(fd[1]);
         read(fd[0], buf, sizeof(buf));

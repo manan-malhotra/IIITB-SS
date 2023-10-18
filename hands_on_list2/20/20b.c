@@ -1,6 +1,6 @@
 /*
 ============================================================================
-Name : 20a.c
+Name : 20b.c
 Author : Manan Malhotra
 Roll No. : MT2023177
 Description :  Write two programs so that both can communicate by FIFO -Use one way communications. 
@@ -15,9 +15,10 @@ Date: 6th Oct, 2023.
 #include<fcntl.h>
 #include<unistd.h>
 
-void main(void) {
-    int fd = open("fifo", O_RDONLY | O_CREAT, 0666);
+int main() {
+    int fd = open("fifo", O_WRONLY | O_CREAT, 0666);
     char buffer[100];
-    int size = read(fd, buffer, 100);
-    printf("%s\n", buffer);
+    printf("Enter a message for the parent: ");
+    fgets(buffer, sizeof(buffer), stdin);
+    write(fd, buffer, sizeof(buffer));
 }

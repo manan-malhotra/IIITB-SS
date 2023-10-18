@@ -1,4 +1,13 @@
-// Write a program to remove the message queue
+/*
+============================================================================
+Name : 29.c
+Author : Manan Malhotra
+Roll No. : MT2023177
+Description : Write a program to remove the message queue
+Date: 6th Oct, 2023.
+============================================================================
+*/
+
 
 #include<stdio.h>
 #include<unistd.h>

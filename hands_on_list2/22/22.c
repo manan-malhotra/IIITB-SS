@@ -1,4 +1,13 @@
-// Write a program to wait for data to be written into FIFO within 10 seconds, use select system call with FIFO.
+/*
+============================================================================
+Name : 22.c
+Author : Manan Malhotra
+Roll No. : MT2023177
+Description :  Write a program to wait for data to be written into FIFO within 10 seconds, use select 
+system call with FIFO.
+Date: 6th Oct, 2023.
+============================================================================
+*/
 
 #include<stdio.h>
 #include<unistd.h>
@@ -7,7 +16,7 @@
 #include<sys/types.h>
 #include <sys/time.h>
 
-void main(void) {
+int main() {
     fd_set rfds;
     struct timeval tv;
     int retval;

@@ -1,3 +1,17 @@
+/*
+============================================================================
+Name : 30d.c
+Author : Manan Malhotra
+Roll No. : MT2023177
+Description : Write a program to create a shared memory.    
+a. write some data to the shared memory    
+b. attach with O_RDONLY and check whether you are able to overwrite.    
+c. detach the shared memory    
+d. remove the shared memory
+Date: 6th Oct, 2023.
+============================================================================
+*/
+
 #include<stdio.h>
 #include<sys/ipc.h>
 #include<sys/shm.h>

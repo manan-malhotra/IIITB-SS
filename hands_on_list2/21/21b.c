@@ -1,4 +1,12 @@
-// Write two programs so that both can communicate by FIFO -Use two way communications.
+/*
+============================================================================
+Name : 21b.c
+Author : Manan Malhotra
+Roll No. : MT2023177
+Description :  Write two programs so that both can communicate by FIFO -Use two way communications. 
+Date: 6th Oct, 2023.
+============================================================================
+*/
 #include<stdio.h>
 #include<stdlib.h>
 #include<sys/types.h>
@@ -6,7 +14,7 @@
 #include<fcntl.h>
 #include<unistd.h>
 
-void main(void) {
+int main() {
     int fd1 = open("fifo1", O_RDWR | O_CREAT, 0666);
     int fd2 = open("fifo2", O_RDWR | O_CREAT, 0666);
     char buffer_write[1024] ;

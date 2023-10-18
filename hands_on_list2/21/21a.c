@@ -1,5 +1,12 @@
-//Write two programs so that both can communicate by FIFO -Use two way communications.
-
+/*
+============================================================================
+Name : 21a.c
+Author : Manan Malhotra
+Roll No. : MT2023177
+Description :  Write two programs so that both can communicate by FIFO -Use two way communications. 
+Date: 6th Oct, 2023.
+============================================================================
+*/
 #include<stdio.h>
 #include<stdlib.h>
 #include<sys/types.h>

@@ -1,8 +1,13 @@
 /*
-Write a program to receive messages from the message queue.
-a. with 0 as a flag
-b. with IPC_NOWAIT as a flag
+============================================================================
+Name : 27a.c
+Author : Manan Malhotra
+Roll No. : MT2023177
+Description : Write a program to receive messages from the message queue.    a. with 0 as a flag    b. with IPC_NOWAIT as a flag
+Date: 6th Oct, 2023.
+============================================================================
 */
+
 
 #include <stdio.h>
 #include <sys/ipc.h>

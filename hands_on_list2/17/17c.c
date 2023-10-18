@@ -1,8 +1,8 @@
 /*
 ============================================================================
 Name : 17.c
-Author : Yash Talele
-Roll No. : MT2023186
+Author : Manan Malhotra
+Roll No. : MT2023177
 Description : Write a program to execute ls -l | wc.
               c. use fcntl
 Date: 19 August, 2023

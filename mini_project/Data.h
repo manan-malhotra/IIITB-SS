@@ -2,11 +2,6 @@
 #include <stdlib.h>
 #include <string.h>
 
-// Define file paths for storing data
-#define ADMIN_FILE "admins.txt"
-#define STUDENT_FILE "students.txt"
-#define FACULTY_FILE "faculty.txt"
-#define COURSE_FILE "courses.txt"
 
 typedef struct Course {
     // Add course details (e.g., ID, name, seats)

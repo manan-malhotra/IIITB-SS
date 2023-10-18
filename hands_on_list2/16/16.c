@@ -42,6 +42,7 @@ int main() {
         char buffer[1024];
         printf("Enter a message for the child: ");
         fgets(buffer, sizeof(buffer), stdin);
+        // read(0,buffer,strlen(buffer));
         int n = write(p[1], buffer, strlen(buffer));
         buffer[0]='\0';
         n=read(r[0], buffer, sizeof(buffer));

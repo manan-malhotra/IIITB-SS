@@ -1,4 +1,12 @@
-// Write a program to create a message queue and print the key and message queue id
+/*
+============================================================================
+Name : 24.c
+Author : Manan Malhotra
+Roll No. : MT2023177
+Description : Write a program to create a message queue and print the key and message queue id.
+Date: 6th Oct, 2023.
+============================================================================
+*/
 
 #include<stdio.h>
 #include<unistd.h>
@@ -6,7 +14,7 @@
 #include<sys/msg.h>
 #include<sys/types.h>
 
-void main(void) {
+int main() {
     int msgid;
     key_t key;
     key=ftok(".", 97);

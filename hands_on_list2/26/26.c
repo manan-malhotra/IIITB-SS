@@ -1,4 +1,13 @@
-// Write a program to send messages to the message queue. Check $ipcs -q
+/*
+============================================================================
+Name : 26.c
+Author : Manan Malhotra
+Roll No. : MT2023177
+Description : Write a program to send messages to the message queue. Check $ipcs -q 
+Date: 6th Oct, 2023.
+============================================================================
+*/
+
 
 #include<stdio.h>
 #include<unistd.h>
@@ -14,7 +23,7 @@ struct msg_buffer {
 int main() {
     key_t key;
     int msgid;
-    key = ftok(".", 97);
+    key = ftok("file", 97);
     msgid = msgget(key, 0666 | IPC_CREAT);
     msg.msg_type = 1;
     printf("Enter Data : ");
